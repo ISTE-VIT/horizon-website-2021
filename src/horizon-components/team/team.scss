@@ -1,0 +1,189 @@
+@import '../../scss/colors.scss';
+#team {
+  background-color: $black;
+  h1 {
+    text-align: left !important;
+    color: #9d86d6;
+    font-weight: 600;
+
+    line-height: 1.5;
+  }
+  .highlight {
+    // background: linear-gradient(89.98deg, #ffffff 0.02%, #adff2f 98.04%);
+    background: #9d86d6;
+
+  }
+  h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    color: #9d86d6;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  .team-memoji-container {
+    height: 16vmax;
+    cursor: pointer;
+    &.abeer {
+      background: url('./abeer.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      transition: all 0.5s ease-out;
+      background-position: center;
+      &:hover {
+        transform: scale(1.01);
+        background-image: url('./abeer-alter.png');
+      }
+    }
+    &.saksham {
+      background: url('./saksham.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      transition: all 0.5s ease-out;
+      background-position: center;
+      &:hover {
+        transform: scale(1.01);
+        background-image: url('./saksham-alter.png');
+      }
+    }
+    &.zaina {
+      background: url('./zaina.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      transition: all 0.5s ease-out;
+      background-position: center;
+      &:hover {
+        transform: scale(1.01);
+        background-image: url('./zaina-alter.png');
+      }
+    }
+    &.manasvi {
+      background: url('./manasvi.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      transition: all 0.5s ease-out;
+      background-position: center;
+      &:hover {
+        transform: scale(1.01);
+        background-image: url('./manasvi-alter.png');
+      }
+    }
+    &.jayesh {
+      background: url('./jayesh.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      transition: all 0.5s ease-out;
+      background-position: center;
+      &:hover {
+        transform: scale(1.01);
+        background-image: url('./jayesh-alter.png');
+      }
+    }
+    &.anushka {
+      background: url('./anushka.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      transition: all 0.5s ease-out;
+      background-position: center;
+      &:hover {
+        transform: scale(1.01);
+        background-image: url('./anushka-alter.png');
+      }
+    }
+    &.vaibhav {
+      background: url('./vaibhav.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      transition: all 0.5s ease-out;
+      background-position: center;
+      &:hover {
+        transform: scale(1.01);
+        background-image: url('./vaibhav-alter.png');
+      }
+    }
+    &.arun {
+      background: url('./arun.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      transition: all 0.5s ease-out;
+      background-position: center;
+      &:hover {
+        transform: scale(1.01);
+        background-image: url('./arun-alter.png');
+      }
+    }
+    &.lakshit {
+      background: url('./lakshit.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      transition: all 0.5s ease-out;
+      background-position: center;
+      &:hover {
+        transform: scale(1.01);
+        background-image: url('./lakshit-alter.png');
+      }
+    }
+    &.hardhik {
+      background: url('./hardhik.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      transition: all 0.5s ease-out;
+      background-position: center;
+      &:hover {
+        transform: scale(1.01);
+        background-image: url('./hardhik-alter.png');
+      }
+    }
+  }
+  .coordinator-cell {
+    transition: all 0.2s;
+    background: $black;
+    a {
+      color: $white;
+    }
+    cursor: pointer;
+    &:hover {
+      background: $white;
+      a {
+        color: $black;
+      }
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+.coordinators-carousel {
+  position: relative;
+
+  .coordinators-panel {
+    transition: all 0.5s;
+    display: flex;
+    opacity: 1;
+  }
+}
+@media only screen and (max-width: 990px) {
+  #team {
+    h1 {
+      font-size: 50px;
+      text-align: center;
+    }
+    .highlight {
+      justify-content: center;
+    }
+    h2 {
+      font-size: 35px;
+    }
+  }
+}
+  @media only screen and (max-width: 390px) {
+    h2 {
+      font-size: 25px;
+    }
+    h3 {
+      font-size: 10px;
+    }
+  }
+

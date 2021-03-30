@@ -1,0 +1,19 @@
+<div class="container mt-5  ">
+    <div class="container">
+    <h1 class="heading">PRIZES</h1>
+    <div class=" row justify-content-center  mt-5">
+        <!-- <% for(var i=0; i < 5; i++) { %>
+            <%- require('../common-card/common-card.ejs')({type:"prize"}) %>
+        <% } %> -->
+
+        <% const prizes = [
+        {name:"first"},{name:"second"},{name:"third"},{name:"fresher"},{name:"girls"}
+        ] %>
+        <% prizes.forEach(prize=>{ %>
+        <div  class=" prizes-container  col-md-4 col-10 my-4">
+            <img src="/assets/<%=prize.name%>-prize.png" />
+        </div>
+        <% }) %>
+    </div>
+    </div>
+</div>

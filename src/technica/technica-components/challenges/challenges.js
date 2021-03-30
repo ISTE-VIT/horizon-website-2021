@@ -1,0 +1,7 @@
+import './challenges.scss'
+import './challenge-upper-blue-triangle.svg'
+import './challenge-lower-blue-triangle.svg'
+import './challenge-upper-triangle.svg'
+import './challenge-lower-triangle.svg'
+import './challenge-content-blue-triangle.svg'
+import './echoAR.svg'

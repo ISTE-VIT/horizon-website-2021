@@ -1,0 +1,51 @@
+<div class="text-container container row mx-auto">
+    <div class="col-12  my-6 align-items-center" >
+       <h1>See you at</h1>
+       <h1>Horizon!</h1>
+    </div>
+    
+</div>
+<div class="gallery-images-container">
+    <% for(var i=0; i < 20; i++) { %>
+        <img src="<%=`/assets/pic-${(i%14+1)}.jpeg`%>"
+            style="transform: translate(<%=Math.floor(Math.pow(-1,Math.floor(Math.random()*10))* Math.random() * 200)+'px,'+Math.floor(Math.random() * 100)+'px'%>);"
+            class="gallery-image"
+            alt="">
+    <% } %>
+    <div class="row container mx-auto pt-5 pb-2 justify-content-between text-center" id="gallery-footer">
+        <div class="col-lg-6 col-12 " >
+            <p> Made with ❤️ by 
+                <a href="https://www.istevit.in/">
+                    ISTE-VIT
+                </a>
+            </p>
+        </div>
+        <div class="col-lg-4 col-12 d-flex justify-content-around">
+            <div>
+                <a href="https://www.youtube.com/channel/UCVRlM9S7LDPyo_mwNpBrnXg" target="_blank">
+                    <img src="/assets/social-youtube.svg" alt="">
+                </a>
+            </div>
+            <div>
+                <a href="https://www.facebook.com/ISTE.VIT/" target="_blank">
+                    <img src="/assets/social-facebook.svg" alt="">
+                </a>
+            </div>
+            <div>
+                <a href="https://github.com/ISTE-VIT" target="_blank">
+                    <img src="/assets/social-github.svg" alt="">
+                </a>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/iste_vit_vellore/" target="_blank">
+                    <img src="/assets/social-instagram.svg" alt="">
+                </a>
+            </div>
+            <div>
+                <a href="https://in.linkedin.com/company/indian-society-for-technical-education" target="_blank">
+                    <img src="/assets/social-linkedin.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

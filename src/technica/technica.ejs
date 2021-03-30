@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technica</title>
+    <link rel="icon" href="/assets/favicon.ico">
+</head>
+
+<body class="text-center">
+    <!-- <svg width="199" height="1462" viewBox="0 0 199 1462" fill="none" xmlns="http://www.w3.org/2000/svg"  class="side-lines">
+        <path d="M194 0V1344L0 1458" stroke="white" stroke-width="9" id="vert-line"/>
+    </svg> -->
+    <svg preserveAspectRatio="none" width="199" height="1462" viewBox="0 0 199 1462" fill="none"
+        xmlns="http://www.w3.org/2000/svg" class="side-lines left top">
+        <path d="M194 0V1344L0 1458" stroke="white" stroke-width="9" class="vert-line top" />
+    </svg>
+
+    <svg preserveAspectRatio="none" width="199" height="1462" viewBox="0 0 199 1462" fill="none"
+        xmlns="http://www.w3.org/2000/svg" class="side-lines right top">
+        <path d="M5 0V1344L199 1458" stroke="white" stroke-width="9" class="vert-line top" />
+    </svg>
+
+    <a href="/" target="_blank">
+        <img src="/assets/horizon-logo.png" id="icon" alt="">
+    </a>
+    <a href="https://istevit.in" target="_blank">
+        <img src="/assets/iste-icon.png" style="max-width: 80px;" id="hamburger-icon" alt="">
+    </a>
+    <section id="hero" class=" d-flex align-items-start justify-content-center">
+        <div class="content-container d-flex flex-column align-items-center justify-content-around mt-5 ">
+            <img class="text-center" id="technicalogo" src="/assets/technica.svg" alt="">
+            <h1 class="heading">TECH<span>NICA</span></h1>
+            <h3><b>Initiate | <span>Innovate</span> | Inspire</b></h3><br>
+            <h3>9<sup>th</sup> to 11<sup>th</sup> April 2021</h3>
+
+            <div class="container mt-lg-3">
+            <button class="technica-hero-btn" > 
+                <div class="btn-content"><a href="https://technica-iste.hackerearth.com/"><img src="/assets/hackerearth.svg" alt="hackerearth">Register Now</a></div></button>
+               
+            <button class="technica-hero-btn" > 
+                <div class="btn-content"> <a href="https://discord.gg/zbmMUJfxRU"><img src="/assets/discord.svg" alt="discord">Join our
+                Discord</a></div></button>
+               
+           </div>
+
+
+        </div>
+      
+        <!-- <div class="white-line"></div> -->
+    </section>
+
+    <section id="triangle">
+        <img src="/assets/triangle-line.svg" alt="">
+    </section>
+    <section id="honeycomb" class="d-flex justify-content-center">
+        <img src="/assets/track-honeycomb.svg" id="track-honeycomb" alt="">
+    </section>
+    <section id="tracks">
+        <%- require('./technica-components/tracks/tracks.ejs')() %>
+    </section>
+    <!-- <section id="challenges">
+        <%- require('./technica-components/challenges/challenges.ejs')() %>
+    </section> -->
+    <div id="prizes">
+        <%- require('./technica-components/prizes/prizes.ejs')() %>
+    </div>
+    <div id="engagements">
+        <%- require('./technica-components/engagements/engagements.ejs')() %>
+    </div>
+
+    <div id="faqs">
+        <%- require('./technica-components/faqs/faqs.ejs')() %>
+    </div>
+
+    <div id="explore">
+        <%- require('./technica-components/explore/explore.ejs')() %>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+<!-- Customerly Live Chat Snippet Code -->
+<script>
+    !function () { var e = window, i = document, t = "customerly", n = "queue", o = "load", r = "settings", u = e[t] = e[t] || []; if (u.t) { return void u.i("[customerly] SDK already initialized. Snippet included twice.") } u.t = !0; u.loaded = !1; u.o = ["event", "attribute", "update", "show", "hide", "open", "close"]; u[n] = []; u.i = function (t) { e.console && !u.debug && console.error && console.error(t) }; u.u = function (e) { return function () { var t = Array.prototype.slice.call(arguments); return t.unshift(e), u[n].push(t), u } }; u[o] = function (t) { u[r] = t || {}; if (u.loaded) { return void u.i("[customerly] SDK already loaded. Use customerly.update to change settings.") } u.loaded = !0; var e = i.createElement("script"); e.type = "text/javascript", e.async = !0, e.src = "https://messenger.customerly.io/launcher.js"; var n = i.getElementsByTagName("script")[0]; n.parentNode.insertBefore(e, n) }; u.o.forEach(function (t) { u[t] = u.u(t) }) }();
+
+    customerly.load({
+        "app_id": "5cab770d",
+        "direction": "right"
+    });
+</script>
+<!-- End of Customerly Live Chat Snippet Code -->
+</body>
+
+</html>

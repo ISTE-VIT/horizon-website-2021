@@ -1,0 +1,47 @@
+<div class="d-flex align-items-center flex-column ">
+    <div >
+        <h1 >Speakers</h1>
+        <div class="event-name-highlight">
+        </div>
+    </div>
+   
+</div>
+<div class="container row mx-auto mt-5 justify-content-center">
+    
+    <% const speakers = [{
+        name : "vijeta",
+        linkedin : "https://www.linkedin.com/in/vijetapai90/"
+    },{
+        name: "rahul",
+        linkedin : "https://www.linkedin.com/in/rpandey1234"
+    },
+    {
+        name: "jayant",
+        linkedin : "https://www.linkedin.com/in/jayant-sharma-a09447126/"
+    },
+    {
+        name : "vaibhav",
+        linkedin : "https://www.linkedin.com/in/vaibhavchopra2001/"
+    },{
+        name : "abeer",
+        linkedin : "https://www.linkedin.com/in/abeer-aftab-00274719a/"
+    },{
+        name: "hardhik",
+        linkedin : "https://www.linkedin.com/in/hardhik-pvv-7152521a6/"
+    },{
+        name: "lakshit",
+        linkedin : "https://www.linkedin.com/in/lakshit-kothari-6569531a1/"
+    }] %>
+    
+    <% speakers.forEach(speaker=>{ %>
+        <a class="col-lg-3 col-md-4 col-12 my-4 speaker-container d-flex flex-column" href="<%=speaker.linkedin%>" target="_blank">
+            <img src="/assets/<%=speaker.name%>-speaker.png" class="speaker"/>
+            <!-- <div class="linkedin-container"> -->
+                <!-- <a href="<%=speaker.linkedin%>" target="_blank"> -->
+                <!-- <img src="/assets/linkedin.svg"></a> -->
+            <!-- </div> -->
+        </a>
+    <% }) %>
+    
+    
+</div>

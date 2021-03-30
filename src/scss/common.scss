@@ -1,0 +1,25 @@
+@import './colors.scss';
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+*,
+body {
+  margin: 0;
+  padding: 0;
+  color: $white;
+  overflow-x: hidden;
+}
+
+.heading {
+  font-size: 6rem;
+  color: $white;
+  letter-spacing: 1rem;
+  font-weight: bold;
+}
+
+.sub-heading {
+  font-size: 4rem;
+}
+
+a {
+  text-decoration: none;
+}

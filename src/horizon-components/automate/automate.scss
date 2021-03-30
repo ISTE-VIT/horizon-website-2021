@@ -1,0 +1,137 @@
+@import '../../scss/common.scss';
+#automate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  // Tweak these to change the style of the toggle
+  $toggle-background-color-on: $magentaLight;
+  $toggle-background-color-off: $magentaDark;
+  $toggle-control-color: white;
+  $toggle-width: 200px;
+  $toggle-height: 70px;
+  $toggle-gutter: 5px;
+  $toggle-radius: 50%;
+  $toggle-control-speed: 0.15s;
+  $toggle-control-ease: ease-in;
+
+  @media only screen and (max-width: 600px) {
+    $toggle-width: 130px;
+    $toggle-height: 50px;
+  }
+
+  // These are our computed variables
+  // change at your own risk.
+
+  $toggle-radius: $toggle-height / 2;
+  $toggle-control-size: $toggle-height - ($toggle-gutter * 2);
+
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(42, 42, 113, 1) 0%,
+    rgba(86, 4, 83, 1) 100%
+  );
+  .event-name-highlight {
+    background: linear-gradient(89.98deg, #30dff7 0.02%, #9838a2 77.93%);
+  }
+
+  .switch-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .toggle-control {
+      margin-top: 20px;
+      display: block;
+      position: relative;
+      padding-left: $toggle-width;
+      margin-bottom: 12px;
+      cursor: pointer;
+      font-size: 22px;
+      user-select: none;
+      min-height: $toggle-height;
+      input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+      }
+
+      input:checked ~ .control {
+        background-color: $toggle-background-color-on;
+
+        &:after {
+          left: $toggle-width - $toggle-control-size - $toggle-gutter;
+        }
+      }
+
+      .control {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: $toggle-height;
+        width: $toggle-width;
+        border-radius: $toggle-radius;
+        background-color: $toggle-background-color-off;
+        transition: background-color $toggle-control-speed $toggle-control-ease;
+
+        &.animated-switch {
+          &:after {
+            animation: move-right 2s infinite;
+          }
+        }
+        &:after {
+          content: '';
+          position: absolute;
+          left: $toggle-gutter;
+          top: $toggle-gutter;
+          width: $toggle-control-size;
+          height: $toggle-control-size;
+          border-radius: $toggle-radius;
+          background: $toggle-control-color;
+          transition: left $toggle-control-speed $toggle-control-ease;
+        }
+
+        @keyframes move-right {
+          0%,
+          100% {
+            left: $toggle-gutter;
+          }
+          33%,
+          66% {
+            left: $toggle-gutter + 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .cta-buttons {
+    > div {
+      max-width: 110px;
+      border: 2px solid #F51BF8 ;
+      a {
+        text-decoration: none !important;
+        color: #F51BF8 !important ;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1040px) {
+  #automate {
+    .switch-container {
+      width: 50%;
+      height: 40%;
+      align-items: center;
+    }
+   
+  }
+}
+@media only screen and (max-width: 390px) {
+  .event h1 {
+    font-size: 2rem;
+  }
+}

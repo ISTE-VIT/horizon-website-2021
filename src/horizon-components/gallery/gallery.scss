@@ -1,0 +1,84 @@
+@import '../../scss/colors.scss';
+
+#gallery {
+  background-color: $black;
+  overflow: hidden;
+  height: 100vh;
+
+  .text-container {
+    position: relative;
+    top: 10%;
+    // left: 50%;
+    // transform: translate(-0%, -50%);
+    width: 100%;
+    text-align: center;
+    z-index: 15;
+    pointer-events: none;
+    h1 {
+      font-size: 10rem;
+      font-family: 'Optima';
+    }
+  }
+  .gallery-images-container {
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    height: 100vh;
+    // bottom: 0;
+
+    .gallery-image {
+      max-width: 300px;
+      max-height: 300px;
+      position: relative;
+      opacity: 0;
+
+      // pointer-events: none;
+      transition: all 4s;
+      &:hover {
+        opacity: 1;
+        transition: all 1s;
+      }
+    }
+    // width: 100vw;
+    // height: 100vh;
+    // left: 0;
+    // right: 0;
+  }
+}
+
+#gallery-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  // width: 100vw;
+  margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 990px) {
+  #gallery {
+    .text-container {
+      h1 {
+        font-size: 8rem;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 800px) {
+  #gallery {
+    .text-container {
+      h1 {
+        font-size: 6rem;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 530px) {
+  #gallery {
+    .text-container {
+      h1 {
+        font-size: 4rem;
+      }
+    }
+  }
+}

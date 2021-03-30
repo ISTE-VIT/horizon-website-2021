@@ -1,0 +1,49 @@
+{
+  "name": "technica-2021",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=development webpack-dev-server --config webpack.dev.js --open",
+    "build": "rm -r dist && webpack --config webpack.prod.js",
+    "run": "NODE_ENV=development webpack-dev-server --config webpack.dev.js",
+    "predeploy": "npm run build",
+    "deploy": "firebase deploy"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^4.2.2",
+    "ejs-easy-loader": "^0.1.4",
+    "file-loader": "^6.1.0",
+    "html-loader": "^1.3.1",
+    "html-webpack-plugin": "^4.5.0",
+    "mini-css-extract-plugin": "^0.10.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.4",
+    "sass": "^1.26.10",
+    "sass-loader": "^9.0.3",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.2.0",
+    "webpack-pwa-manifest": "^4.3.0",
+    "workbox-webpack-plugin": "^6.1.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "cta": "^0.3.2",
+    "glider-js": "^1.7.5",
+    "jquery": "^3.5.1",
+    "locomotive-scroll": "^4.0.6",
+    "owl.carousel": "^2.3.4",
+    "parallax-js": "^3.1.0",
+    "pixi.js": "^5.3.7",
+    "popper.js": "^1.16.1",
+    "scrollmagic": "^2.0.8",
+    "three": "^0.125.2",
+    "vanta": "^0.5.21"
+  }
+}

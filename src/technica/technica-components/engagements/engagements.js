@@ -1,0 +1,7 @@
+import './engagements.scss'
+import './engagement-upper-triangle.svg'
+import './engagement-lower-triangle.svg'
+import './engagement-upper-card-section.svg'
+import './cloud-poster.jpeg'
+import './engagement-vijeta.png'
+import './engagement-rahul.png'

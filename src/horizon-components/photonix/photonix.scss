@@ -1,0 +1,46 @@
+#photonix {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(86, 4, 83, 1) 0%,
+    rgba(1, 1, 1, 1) 100%
+  );
+  min-height: 100vh;
+  img#photonix-woman {
+    max-height: 80vh;
+  }
+  img#crosshair {
+    margin-top: 10vh;
+    width: 50vmin;
+    height: 50vmin;
+    max-height: 300px;
+    max-width: 300px;
+    margin-left: 5vw;
+  }
+  
+  .cta-buttons {
+    > div {
+      max-width: 110px;
+      border: 2px solid #F51BF8 ;
+      a {
+        text-decoration: none !important;
+        color: #F51BF8 !important ;
+      }
+    }
+  }
+  @media (max-width: 576px) {
+    img#photonix-woman {
+      max-width: 35vh;
+    }
+    img#crosshair {
+      width: 25vh;
+      height: 25vh;
+      margin-left: 15vw;
+    }
+  }
+
+  .event-name-highlight {
+    background: linear-gradient(89.98deg, #d4eefb 0.02%, #290527 95.04%);
+  }
+  
+}

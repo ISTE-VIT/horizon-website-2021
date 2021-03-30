@@ -1,0 +1,167 @@
+<div class="container">
+    <h1 class="heading mt-5">FAQS</h1>
+    <div class="row mt-4 ">
+        <ul class="faq__tabs col-lg-6 " style=" margin-bottom: 0rem;">
+
+            <li class="faq__tab " onclick="toggleAccordion(this)">
+                <div class="faq__tab__headline">
+                    <h6>Q. Who all can register?</h6><span class="icon"></span>
+                </div>
+                <div class=" faq__tab__content">
+                    <div class="wrapper">
+                        <p>If you love to code, you are more than welcome to participate in the hackathon.
+                        </p>
+                    </div>
+                </div>
+            </li>
+
+            <li class="faq__tab " onclick="toggleAccordion(this)">
+                <div class="faq__tab__headline">
+                    <h6>Q. How will project submissions work?</h6><span class="icon"></span>
+                </div>
+                <div class=" faq__tab__content">
+                    <div class="wrapper">
+                        <p>To participate, register on Hackerearth platform. You will then be able to create your project once the hackathon starts. To be eligible for the judging process you'll have to submit the project before the hackathon ends.
+                        </p>
+                    </div>
+                </div>
+            </li>
+
+            <li class="faq__tab " onclick="toggleAccordion(this)">
+                <div class="faq__tab__headline">
+                    <h6>Q. How big can a team be?</h6><span class="icon"></span>
+                </div>
+                <div class=" faq__tab__content">
+                    <div class="wrapper">
+                        <p>Up to 4 people large! Pro Tip: Aim to have a mix of people with both design and developer
+                            skills.
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li class="faq__tab " onclick="toggleAccordion(this)">
+                <div class="faq__tab__headline">
+                    <h6>Q. Do I Keep Working Throughout The Event?</h6><span class="icon"></span>
+                </div>
+                <div class=" faq__tab__content">
+                    <div class="wrapper">
+                        <p>Of course not. We have numerous fun-filled mini-events in the bag for you. Stay tuned to our
+                            social media handles for detailed updates on the mini-events.
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li class="faq__tab " onclick="toggleAccordion(this)">
+                <div class="faq__tab__headline">
+                    <h6>Q. Can I bring my previous project to the hackathon?</h6><span class="icon"></span>
+                </div>
+                <div class=" faq__tab__content">
+                    <div class="wrapper">
+                        <p>We apologize, but all hackathon's projects should be developed during the event from scratch.
+                            We want honest conditions for all hackers. That's why all code should be done during the
+                            hackathon.
+                        </p>
+                    </div>
+                </div>
+            </li>
+
+
+
+        </ul>
+        <ul class="faq__tabs col-lg-6 " style=" margin-bottom: 0rem;">
+            <li class="faq__tab " onclick="toggleAccordion(this)">
+                <div class="faq__tab__headline">
+                    <h6>Q. How much does it cost?</h6><span class="icon"></span>
+                </div>
+                <div class=" faq__tab__content">
+                    <div class="wrapper">
+                        <p>Admission to Technica is completely free for all college students!
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li class="faq__tab " onclick="toggleAccordion(this)">
+                <div class="faq__tab__headline">
+                    <h6>Q. What is the deadline to register?</h6><span class="icon"></span>
+                </div>
+                <div class=" faq__tab__content">
+                    <div class="wrapper">
+                        <p>Applications close April 7th, 2020, at 11:59 PM (IST).
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li class="faq__tab " onclick="toggleAccordion(this)">
+                <div class="faq__tab__headline">
+                    <h6>Q. I am a newbie, can I hack?</h6><span class="icon"></span>
+                </div>
+                <div class=" faq__tab__content">
+                    <div class="wrapper">
+                        <p>Of course you can! We at Technica ensure that no one is left behind during the hacking,
+                            thanks to our mentors and volunteers who help us achieve the same. We make sure that you
+                            learn the best you can alongside having fun and experiencing what it feels to belong to a
+                            community.
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li class="faq__tab " onclick="toggleAccordion(this)">
+                <div class="faq__tab__headline">
+                    <h6>Q. Are these are the only themes/tracks for the hackathon?</h6><span class="icon"></span>
+                </div>
+                <div class=" faq__tab__content">
+                    <div class="wrapper">
+                        <p>We never want to limit your innovation. Under the category of Open Innovation, you can work
+                            on any project of your choice which can be of any theme.
+                        </p>
+                    </div>
+                </div>
+            </li>
+
+
+
+
+
+            <li class="faq__tab " onclick="toggleAccordion(this)">
+                <div class="faq__tab__headline">
+                    <h6>Q. Error 404 question not found?</h6><span class="icon"></span>
+                </div>
+                <div class=" faq__tab__content">
+                    <div class="wrapper">
+                        <p>Drop us a mail at iste@vit.ac.in and we would be more than happy to answer your queries!
+                        </p>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+
+
+
+
+
+
+    </div>
+</div>
+<script>
+    var elementOld = null;
+    var openClass = "faq__tab--open";
+
+    function toggleAccordion(element) {
+        content = element.querySelector(".faq__tab__content");
+
+        if (elementOld != null) {
+            elementOld.classList.remove(openClass);
+            contentOld = elementOld.querySelector(".faq__tab__content");
+            contentOld.style.maxHeight = "0px";
+        }
+
+        if (elementOld !== element) {
+            element.classList.add(openClass);
+            content.style.maxHeight = content.scrollHeight + "px";
+            elementOld = element;
+        } else {
+            elementOld = null;
+        }
+    }
+</script>

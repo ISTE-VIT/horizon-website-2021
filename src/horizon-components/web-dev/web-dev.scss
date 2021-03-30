@@ -1,0 +1,59 @@
+@import '../../scss/colors.scss';
+$gradient: linear-gradient(
+  89.98deg,
+  #30dff7 0.02%,
+  #fa4e4f 0.03%,
+  rgba(48, 223, 247, 0.82) 48.32%,
+  #9838a2 98.04%
+);
+#web-dev {
+  background: linear-gradient(
+    180deg,
+    rgba(1, 1, 1, 1) 0%,
+    rgba(42, 42, 113, 1) 100%
+  );
+  padding-top: 20vh;
+  .event-name-highlight {
+    background: linear-gradient(89.98deg, #d4eefb 0.02%, #1e1e51 95.04%);
+  }
+
+  .cta-buttons {
+    > div {
+      max-width: 110px;
+      border: 2px solid #F51BF8 ;
+      a {
+        text-decoration: none !important;
+        color: #F51BF8 !important ;
+      }
+    }
+  }
+  // body {
+  //   background: #5d00d6;
+  //   margin: 0;
+  //   display: grid;
+  //   place-items: center;
+  //   color: white;
+  //   font-family: 'Poppins';
+  //   height: 100vh;
+  // }
+
+  button {
+    background: $white;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    border-radius: 2rem;
+    // font-size
+    span {
+      // background: $gradient;
+      font-size: 1.5rem;
+      // -webkit-background-clip: text;
+      // -webkit-text-fill-color: transparent;
+      color: #c545d3;
+    }
+  }
+}
+@media only screen and (max-width: 1040px) {
+  #web-dev {
+    justify-content: center;
+  }
+}

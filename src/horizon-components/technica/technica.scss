@@ -1,0 +1,49 @@
+@import '../../scss/colors.scss';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+#technica {
+  // background-color: $black;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(41, 41, 44, 1) 0%,
+    rgb(0, 0, 0) 100%
+  );
+  h1 {
+    // font-family: 'Montserrat', sans-serif !important;
+    // font-size: 75px;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 10px;
+    @media only screen and (max-width: 990px) {
+      font-size: 55px;
+      letter-spacing: 3px;
+    }
+  }
+  h2 {
+    line-height: 1.5;
+    @media only screen and (max-width: 990px) {
+       font-size: 25px;
+    }
+  }
+  img {
+    max-height: 90vh;
+    // margin-left: -10vmin;
+  }
+  .event-name-highlight {
+    background: linear-gradient(89.98deg, #ffffff 0.02%, #27a5ef 98.04%);
+  }
+  a {
+    text-decoration: none;
+  }
+  .cta-buttons {
+    > div {
+      div {
+        font-size: 1.5rem;
+        color: #27a5ef;
+        &:hover {
+          border-bottom: 1px solid #27a5ef;
+        }
+      }
+    }
+  }
+}

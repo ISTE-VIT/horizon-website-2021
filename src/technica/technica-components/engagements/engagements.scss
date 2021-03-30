@@ -1,0 +1,28 @@
+@import '../../../scss/colors.scss';
+#engagements {
+  margin-top: 25vh;
+  > .container-fluid,
+  .container {
+    background: $blue;
+  }
+  .upper-blue-triangle,
+  .lower-blue-triangle {
+    width: 100%;
+  }
+}
+
+#engagements {
+  .engagement-container {
+    justify-content: center;
+    display: flex;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+@media only screen and (max-width: 540px) {
+  #engagements {
+    margin-top: 5vh;
+  }
+}

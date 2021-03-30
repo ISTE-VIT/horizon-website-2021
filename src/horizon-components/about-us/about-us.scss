@@ -1,0 +1,18 @@
+#about-us {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(1, 1, 1, 1) 100%
+  );
+
+  .event-name-highlight {
+    background: linear-gradient(89.98deg, #fff 0%, #02c5e7 100%);
+  }
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  p {
+    margin-top: 25px;
+  }
+}

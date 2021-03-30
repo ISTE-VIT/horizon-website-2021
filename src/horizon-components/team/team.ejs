@@ -1,0 +1,119 @@
+<div class="d-flex align-items-center flex-column mb-5">
+    <div>
+
+        <h1 class="mt-5">Team</h1>
+        
+        <div class="highlight"></div>
+    </div>
+</div>
+
+<h2>
+    Convenors
+</h2>
+<div class="container row justify-content-center text-center  ">      
+    <div class="col-lg-3 col-md-4 col-12 my-4 speaker-container d-flex flex-column">
+        <img src="/assets/amit-mahendrakar.png" class="speaker w-100"/>
+       
+    </div>
+    <div class="col-lg-3 col-md-4 col-12 my-4 speaker-container d-flex flex-column">
+        <img src="/assets/sasikumar.png" class="w-100"/>
+       
+    </div>
+</div>
+
+<h2>
+    Organisers
+</h2>
+
+<div class="container row justify-content-center text-center  ">
+
+    <div class="col-6 col-md-4 col-lg-2 ">
+        <div class="team-memoji-container saksham w-100">
+        </div>
+        <h5>Saksham Jain</h5>
+        <h6>Student Head</h6>
+    </div>
+    <div class="col-6 col-md-4 col-lg-2 ">
+        <div class="team-memoji-container abeer w-100">
+        </div>
+        <h5>Abeer Aftab</h5>
+        <h6>Design Head</h6>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-2 ">
+        <div class="team-memoji-container lakshit w-100">
+        </div>
+        <h5>Lakshit Kothari</h5>
+        <h6>Technical Head</h6>
+    </div>
+    <div class="col-6 col-md-4 col-lg-2 ">
+        <div class="team-memoji-container hardhik w-100">
+        </div>
+        <h5>P.V.V Hardhik</h5>
+        <h6>Technical Head</h6>
+    </div>
+    <div class="col-6 col-md-4 col-lg-2 ">
+        <div class="team-memoji-container vaibhav w-100">
+        </div>
+        <h5>Vaibhav Chopra</h5>
+        <h6>Projects Lead</h6>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-2 ">
+        <div class="team-memoji-container zaina w-100">
+        </div>
+        <h5>Zaina Nizar</h5>
+        <h6>Student Coordinator</h6>
+    </div>
+    <div class="col-6 col-md-4 col-lg-2 ">
+        <div class="team-memoji-container jayesh w-100">
+        </div>
+        <h5>Jayesh Singh</h5>
+        <h6>Student Coordinator</h6>
+    </div>
+
+
+    <div class="col-6 col-md-4 col-lg-2 ">
+        <div class="team-memoji-container anushka w-100">
+        </div>
+        <h5>Anushka Dixit</h5>
+        <h6>Publicity & Public Relations Head</h6>
+    </div>
+    <div class="col-6 col-md-4 col-lg-2 ">
+        <div class="team-memoji-container arun w-100">
+        </div>
+        <h5>Arunoday </h5>
+        <h6>Publicity & Public Relations Head</h6>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-2 ">
+        <div class="team-memoji-container manasvi w-100">
+        </div>
+        <h5>Manasvi</h5>
+        <h6>Events & Finance Head</h6>
+    </div>
+
+
+
+</div>
+<h2 class="my-5">Coordinators</h2>
+<div class="coordinators-carousel container">
+
+    <% for(var i=0; i < 3; i++) { %>
+        <div class="row my-3 mx-0 coordinators-panel" style="border-radius: 2rem; border:2px solid white">
+            <% for(var j=0; j < 20; j++) { %>
+                <div class="col-6 col-lg-3 py-3 px-0 border-white border coordinator-cell">
+                    <a href="<%=coordinators[i*20+j].linkedin%>" target="_blank">
+                        <%= coordinators[i*20+j].name %>
+                    </a>
+                </div>
+                <% } %>
+        </div>
+        <% } %>
+
+</div>
+<div class="d-flex justify-content-center">
+    <img src="/assets/carousel-left.svg" class="mr-2" id="carousel-left" alt="">
+    <img src="/assets/carousel-right.svg" class="ml-2" id="carousel-right" alt="">
+</div>
+</div>

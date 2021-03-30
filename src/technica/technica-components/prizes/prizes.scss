@@ -1,0 +1,26 @@
+#prizes {
+  margin-top: 50vh;
+
+  .engagement-content {
+    background-size: contain;
+    background-image: url('./first-prize.svg');
+  }
+  .prizes-container {
+    justify-content: center;
+    display: flex;
+
+    img {
+      width: 100%;
+      height: auto;
+      // transition: transform 0.5s;
+      // &:hover {
+      //   transform: scale(1.01);
+      // }
+    }
+  }
+}
+@media only screen and (max-width: 540px) {
+  #prizes {
+    margin-top: 5vh;
+  }
+}

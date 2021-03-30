@@ -1,0 +1,27 @@
+<svg
+  width="1476"
+  height="233"
+  viewBox="0 0 1476 233"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <style>
+    #common-upper-card-section-1,#common-upper-card-section-2{
+      fill: #000;
+    }
+  </style>
+  
+<path
+    d="M0.000244141 215.013L736.459 -0.000152588L0.000244141 -0.000152588V215.013Z"
+    id="common-upper-card-section-1"
+  />
+<path
+    d="M1476 215.013L739.541 -0.000152588L1476 -0.000152588V215.013Z"
+    id="common-upper-card-section-2"
+  />
+<path
+    d="M1453.94 222.618L737 12.4603L22.0543 222.618"
+    stroke="white"
+    stroke-width="20"
+  />
+</svg>

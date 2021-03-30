@@ -1,0 +1,219 @@
+@import './colors.scss';
+$usefulNumber: 28.8675134595vw;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+  overflow: hidden;
+}
+
+.side-lines {
+  position: absolute;
+  z-index: 100;
+  // width: 10vw;
+
+  // height: 200vh;
+  &.left {
+    left: 0;
+    margin-left: -5vw;
+  }
+  &.right {
+    right: 0;
+    margin-right: -5vw;
+  }
+
+  top: 0;
+
+  &.bottom {
+    top: 250vh;
+  }
+}
+
+body {
+  background-color: $black !important;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: $white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+// .container {
+//   width: 70% !important;
+// }
+#hamburger-icon {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 2;
+}
+#icon {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  z-index: 2;
+  height: 74px;
+}
+#hero {
+  //   background:
+  height: calc(100vh + 28.8675134595vw);
+  overflow: hidden;
+  // height: calc(100vh + $usefulNumber);
+  // 142.8571428613vh;
+  // margin-bottom: calc(-28.8675134595vw + 0);
+  clip-path: polygon(
+    100% 0,
+    100% calc(100% - 28.8675134595vw),
+    50% 100%,
+    0 calc(100% - 28.8675134595vw),
+    0 0
+  );
+  > .heading {
+    padding-top: 6rem !important;
+  }
+
+  span {
+    color: $blue;
+  }
+
+  // .white-line {
+  //   clip-path: polygon(100% 0, 100% 70%, 50% 100%, 0 70%, 0 0);
+  //   //  polygon(
+  //   //   0 0,
+  //   //   50% 28.8675134595%,
+  //   //   100% 0,
+  //   //   100% 5%,
+  //   //   50% 100%,
+  //   //   0 5%
+  //   // );
+  //   height: 29.8675134595vh;
+  //   position: absolute;
+  //   // margin-top: 3.75vw;
+  //   background-color: white;
+  //   width: 100vw;
+  // }
+}
+#technicalogo {
+  width: 80%;
+  max-width: 300px;
+}
+
+a {
+  text-decoration: none !important;
+  color: white !important;
+}
+#triangle {
+  margin-top: calc(-28.8675134595vw + 10px);
+  // background: white;
+  img {
+    width: 100%;
+    height: $usefulNumber;
+  }
+  // clip-path: polygon(100% 0, 0 0, 50% 100%);
+  // height: 28.8675134595vw;
+  // background-color: pink;
+  // margin-top: calc(-28.8675134595vw + 10px);
+}
+#honeycomb {
+  // clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0, 50% 28%);
+  // polygon(50% 28.8675134595%, 100% 0, 100% 100%, 0 100%, 0 0);
+  // height: calc(28.8675134595vw + 100vh + 50px);
+  //   border: 50px solid pink;
+  img {
+    width: 100%;
+    height: auto;
+    max-height: 90vh;
+  }
+}
+
+#track-honeycomb {
+  //   margin: 28.8675134595vw auto 0;
+  //   margin-top: 21.3675134595vw;
+
+  // margin-top: calc(7.5vw + 100px);
+  //   max-height: 70vh;
+  //   margin-left: auto;
+  //   margin-right: auto;
+}
+
+// #vantajs {
+//   width: auto;
+//   height: 600px;
+//   margin-bottom: 50px;
+// }
+
+.technica-hero-btn {
+  width: 200px;
+  justify-content: center;
+  display: inline-block;
+  background: #313742;
+  &:hover {
+    background: #282828;
+  }
+  border: 0;
+  margin: 10px;
+  padding: 2px;
+  transition: all 0.2s ease-in-out;
+
+  .btn-content {
+    padding: 10px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    opacity: 0.9;
+
+    img {
+      margin-right: 10px;
+      height: 2rem;
+      width: 2rem;
+    }
+  }
+}
+
+body::-webkit-scrollbar {
+  width: 0.5em;
+  background-color: black;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #27a5ef;
+  outline: 1px solid black;
+}
+@media only screen and (max-width: 1140px) {
+  .side-lines {
+    opacity: 0;
+    display: none;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .heading {
+    font-size: 4rem !important;
+    letter-spacing: 0.2rem !important;
+  }
+  .sub-heading {
+    font-size: 2rem !important;
+    padding-top: 2rem;
+  }
+}
+@media only screen and (max-width: 540px) {
+  #technicalogo {
+    width: 60% !important;
+    max-width: 200px !important;
+    margin-top: 20%;
+  }
+  .heading {
+    font-size: 2.5rem !important;
+    letter-spacing: 0rem !important;
+  }
+  .sub-heading {
+    font-size: 2rem !important;
+    padding-top: 2rem;
+  }
+}

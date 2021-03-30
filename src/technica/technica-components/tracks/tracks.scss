@@ -1,0 +1,32 @@
+
+#tracks {
+    margin-top: 25vh;
+    .track-info {
+      letter-spacing: 43;
+    }
+    .tracks-list {
+      margin-top: 25vh;
+  p{
+    text-align: justify;
+    text-justify: inter-word;
+  }
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+  #honeycomb,
+  #tracks {
+   
+    background-color: black;
+  }
+  @media only screen and (max-width: 540px) {
+    #tracks{
+      margin-top: 5vh ;
+
+      .tracks-list {
+        margin-top: 5vh;
+      }
+    }
+  }

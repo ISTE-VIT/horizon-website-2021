@@ -1,0 +1,64 @@
+@import '../../scss/colors.scss';
+#speakers {
+  background-color: $black;
+  h1 {
+    color: #fd145a;
+  }
+  .event-name-highlight {
+    background: #fd145a;
+  }
+  .speaker-container {
+    .speaker {
+      object-fit: contain;
+      // transition: transform 0.5s;
+      // &:hover {
+      //   transform: scale(1.01);
+      // }
+    }
+    overflow: hidden !important;
+  }
+  .linkedin-container {
+    // background-color: $black;
+    width: 60px;
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    a {
+      text-decoration: none;
+    }
+  }
+}
+@media only screen and (max-width: 990px) {
+  div h1 {
+    font-size: 50px;
+  }
+  #speakers .linkedin-container {
+    background-color: $black;
+    width: 40px;
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+    object-fit: contain;
+    height: 40px;
+  }
+}
+@media only screen and (max-width: 390px) {
+  div h1 {
+    font-size: 50px;
+  }
+  #speakers .linkedin-container {
+    background-color: $black;
+    width: 70px;
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+    object-fit: contain;
+    height: 70px;
+  }
+}

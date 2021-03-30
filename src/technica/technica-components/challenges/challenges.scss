@@ -1,0 +1,49 @@
+@import '../../../scss/colors.scss';
+
+#challenges {
+  margin-top: 50vh;
+  > .container-fluid {
+    background: $blue;
+  }
+  .upper-blue-triangle,
+  .lower-blue-triangle {
+    // background: red;
+    width: 100%;
+  }
+  .lower-challenge-triangle,
+  .challenge-content {
+    border: 5px solid $white;
+  }
+  .upper-challenge-triangle,
+  .lower-challenge-triangle,
+  .challenge-content,
+  .challenge-content-blue-triangle {
+    width: 100%;
+    height: auto;
+  }
+  .lower-challenge-triangle {
+    // border-left: none;
+    // border-right: none;
+    border-top: none;
+    border-bottom: none;
+  }
+  .challenge-content {
+    border-top: none;
+    border-bottom: none;
+    min-height: 200px;
+  }
+  p{
+    padding: 5px;
+    font-weight: 400;
+
+    text-align: justify;
+    text-justify: inter-word;
+  }
+}
+@media only screen and (max-width: 540px) {
+  #challenges{
+    margin-top: 5vh ;
+
+  }
+}
+

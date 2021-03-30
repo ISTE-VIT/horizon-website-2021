@@ -1,0 +1,30 @@
+@import '../../../scss/colors.scss';
+
+#explore {
+  // margin-top: 25vh;
+  position: relative;
+
+  > div {
+    background: $blue;
+    a {
+      color: $white;
+      text-decoration: underline;
+    }
+
+    .footer-links {
+      a {
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  // .end-shape {
+  //   width: 100vw;
+  //   // height: auto;
+  //   // position: absolute;
+  //   left: 0;
+  // }
+}

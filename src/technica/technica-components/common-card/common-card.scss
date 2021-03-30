@@ -1,0 +1,36 @@
+@import '../../../scss/colors.scss';
+
+#engagements,
+#prizes {
+  .engagement-upper-triangle,
+  .engagement-lower-triangle,
+  .engagement-upper-card-section {
+    width: 100%;
+  }
+
+  .engagement-upper-card-section {
+    position: relative;
+    z-index: 10;
+  }
+
+  .engagement-upper-triangle {
+    margin-bottom: -1px;
+  }
+
+  .engagement-lower-triangle {
+    margin-top: -1px;
+  }
+
+  .engagement-content {
+    border: 5px solid $white;
+    border-top: none;
+    width: 100%;
+    border-bottom: none;
+    margin-top: -50px;
+    background-position: top;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    border-bottom: none;
+    min-height: 300px;
+  }
+}

@@ -1,0 +1,10 @@
+import './linkedin.svg'
+import './speakers.scss'
+
+import './rahul-speaker.png'
+import './vijeta-speaker.png'
+import './vaibhav-speaker.png'
+import './hardhik-speaker.png'
+import './abeer-speaker.png'
+import './lakshit-speaker.png'
+import './jayant-speaker.png'
