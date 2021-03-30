@@ -10,8 +10,8 @@
 <p>ISTE-VIT presents to you Horizon'21 - a National Technical Fest with over 1400 participants for a learning experience like none other. Expand your skillset with workshops on Web development, Photo and Video design, Python Automation, and Competitive Coding. Initiate new ideas, put forth innovative solutions, and compete with the sharpest of minds in one of a kind hackathon - Technica.</p>
 
 ## Screenshots
-<img src="https://github.com/ISTE-VIT/horizon-2021/blob/master/src/assets/horizon.png" alt="Project Screenshots">
-<img src="https://github.com/ISTE-VIT/horizon-2021/blob/master/src/assets/technica.png" alt="Project Screenshots">
+<img src="https://github.com/ISTE-VIT/horizon-website-2021/blob/master/src/assets/horizon.png" alt="Project Screenshots">
+<img src="https://github.com/ISTE-VIT/horizon-website-2021/blob/master/src/assets/technica.png" alt="Project Screenshots">
 
 ## Contributors
 - <a href="https://github.com/sudo-vaibhav">Vaibhav Chopra</a>
@@ -19,7 +19,7 @@
 
 ## Instructions to run
 ```
-$ git clone https://github.com/ISTE-VIT/horizon-2021.git
+$ git clone https://github.com/ISTE-VIT/horizon-website-2021.git
 $ npm install
 $ npm start
 ```
