@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "NODE_ENV=development webpack-dev-server --config webpack.dev.js --open",
-    "build": "rm -r dist && webpack --config webpack.prod.js",
+    "build": " webpack --config webpack.prod.js",
     "run": "NODE_ENV=development webpack-dev-server --config webpack.dev.js",
     "predeploy": "npm run build",
     "deploy": "firebase deploy"
