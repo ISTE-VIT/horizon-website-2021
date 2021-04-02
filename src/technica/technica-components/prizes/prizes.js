@@ -1,10 +1,3 @@
 import './prizes.scss'
- import './first-prize.svg'
-import './prize-upper-card-section.svg'
-import './girlsteam.png'
-import './hackerfirst.png'
-import './first-prize.png'
-import './second-prize.png'
-import './third-prize.png'
-import './fresher-prize.png'
-import './girls-prize.png'
+ 
+require.context('.', true, /\.(png|svg|jpg)$/)
