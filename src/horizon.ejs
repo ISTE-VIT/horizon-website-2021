@@ -1,136 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Horizon'21</title>
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <meta name="description" content="Horizon'20 - one of the largest technical fests with over 1400 participants from multitude of fields coming together for a learning experience like none other. Broaden your technical horizon with a variety of workshops based on Web development, Photo and Video design. Initiate new ideas , put forth innovative solutions and compete with sharpest of minds in one a kind hackathon - Technica."/>
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1"
+    />
+    <meta
+      name="description"
+      content="Horizon'20 - one of the largest technical fests with over 1400 participants from multitude of fields coming together for a learning experience like none other. Broaden your technical horizon with a variety of workshops based on Web development, Photo and Video design. Initiate new ideas , put forth innovative solutions and compete with sharpest of minds in one a kind hackathon - Technica."
+    />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="ISTE-VIT" />
-    <meta property="og:description" content="Horizon'21 - one of the largest technical fests with over 1400 participants from multitude of fields coming together for a learning experience like none other. Broaden your technical horizon with a variety of workshops based on Web development, Photo and Video design. Initiate new ideas , put forth innovative solutions and compete with sharpest of minds in one a kind hackathon - Technica." />
+    <meta
+      property="og:description"
+      content="Horizon'21 - one of the largest technical fests with over 1400 participants from multitude of fields coming together for a learning experience like none other. Broaden your technical horizon with a variety of workshops based on Web development, Photo and Video design. Initiate new ideas , put forth innovative solutions and compete with sharpest of minds in one a kind hackathon - Technica."
+    />
     <meta property="og:url" content="index.html" />
     <meta property="og:site_name" content="ISTE-VIT" />
-    <meta name="keywords" content="ISTE, iste, ISTE VIT, ISTE-VIT, vit, VIT, VIT-Vellore, Vit, Iste, Vellore, Student, Chapter, Club, club, CLUB, CHAPTER, chapter, Education, India, Indian, Society, Indian Society For Technical Education,Horizon,Technica"> 
+    <meta
+      name="keywords"
+      content="ISTE, iste, ISTE VIT, ISTE-VIT, vit, VIT, VIT-Vellore, Vit, Iste, Vellore, Student, Chapter, Club, club, CLUB, CHAPTER, chapter, Education, India, Indian, Society, Indian Society For Technical Education,Horizon,Technica"
+    />
 
-    <link rel="icon" href="/assets/favicon.ico">
+    <link rel="icon" href="/assets/favicon.ico" />
+  </head>
 
-
-</head>
-
-<body>
+  <body>
     <style>
-        body {
-            overflow-y: hidden !important;
-        }
+      body {
+        overflow-y: hidden !important;
+      }
 
-        #preloader {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            overflow: hidden;
-            background-color: black;
-            font-weight: 300;
-            display: flex;
-            align-items: flex-end;
-            justify-content: center;
-            z-index: 999999;
-            /* makes sure it stays on top */
-        }
+      #preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        background-color: black;
+        font-weight: 300;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        z-index: 999999;
+        /* makes sure it stays on top */
+      }
     </style>
     <script>
-        window.addEventListener("DOMContentLoaded", () => {
-            const preloader = document.querySelector("#preloader")
-            preloader.remove()
-            document.querySelector("body").style.overflowY = "auto"
-            // setTimeout(()=>{
-            //     const introVideo = document.querySelector('#landing-video-intro')
-            //     introVideo.play()
-            // },
-            // 2000
-            // 0
-            // )
-        })
+      window.addEventListener("DOMContentLoaded", () => {
+        const preloader = document.querySelector("#preloader");
+        preloader.remove();
+        document.querySelector("body").style.overflowY = "auto";
+        // setTimeout(()=>{
+        //     const introVideo = document.querySelector('#landing-video-intro')
+        //     introVideo.play()
+        // },
+        // 2000
+        // 0
+        // )
+      });
     </script>
     <div id="preloader">
-        <h5>
-            LOADING
-        </h5>
+      <h5>LOADING</h5>
     </div>
     <section class="container" id="landing" class="event">
-        <video autoplay playsinline preload="auto" muted loop id="landing-video"
-            poster="/assets/landing-video-thumbnail.jpg" style="">
-            <source
-                src="https://firebasestorage.googleapis.com/v0/b/technica-2021.appspot.com/o/landingIntro-desktop.mp4?alt=media"
-                type="video/mp4">
-        </video>
-        <!-- <video muted id="landing-video-intro" poster="/assets/landing-video-thumbnail.jpg" class="landing-video">
+      <video
+        autoplay
+        playsinline
+        preload="auto"
+        muted
+        loop
+        id="landing-video"
+        poster="/assets/landing-video-thumbnail.jpg"
+        style=""
+      >
+        <source
+          src="https://firebasestorage.googleapis.com/v0/b/technica-2021.appspot.com/o/landingIntro-desktop.mp4?alt=media"
+          type="video/mp4"
+        />
+      </video>
+      <!-- <video muted id="landing-video-intro" poster="/assets/landing-video-thumbnail.jpg" class="landing-video">
             <source src="/assets/landing-intro-video.mp4" type="video/mp4">
         </video> -->
-        <a href="/" target="_blank">
-            <img src="/assets/horizon-logo.png" id="icon" alt="">
-        </a>
-        <a href="https://istevit.in" target="_blank">
-            <img src="/assets/iste-icon.png" style="max-width: 80px;" id="hamburger-icon" alt="">
-        </a>
-        <div class="overlay-text my-auto mx-0 px-0">
-            <p>HORIZON</p>
-            <h3>Envision Technical Excellence</h3>
-            <h3>9<sup>th</sup> to 11<sup>th</sup> April 2021</h3>
-        </div>
-
+      <a href="/" target="_blank">
+        <img src="/assets/horizon-logo.png" id="icon" alt="" />
+      </a>
+      <a href="https://istevit.in" target="_blank">
+        <img
+          src="/assets/iste-icon.png"
+          style="max-width: 80px"
+          id="hamburger-icon"
+          alt=""
+        />
+      </a>
+      <div class="overlay-text my-auto mx-0 px-0">
+        <p>HORIZON</p>
+        <h3>Envision Technical Excellence</h3>
+        <h3>April 2022</h3>
+      </div>
     </section>
 
     <section id="about-us" class="event d-flex justify-content-center">
-        <%- require('./horizon-components/about-us/about-us.ejs')() %>
+      <%- require('./horizon-components/about-us/about-us.ejs')() %>
     </section>
     <section id="web-dev" class="event d-flex justify-content-center">
-        <%- require('./horizon-components/web-dev/web-dev.ejs')() %>
+      <%- require('./horizon-components/web-dev/web-dev.ejs')() %>
     </section>
     <section id="automate" class="event d-flex justify-content-center">
-        <%- require('./horizon-components/automate/automate.ejs')() %>
+      <%- require('./horizon-components/automate/automate.ejs')() %>
     </section>
 
     <section id="photonix" class="event">
-        <%- require('./horizon-components/photonix/photonix.ejs')() %>
+      <%- require('./horizon-components/photonix/photonix.ejs')() %>
     </section>
     <section id="code-asymptote" class="content event">
-        <%- require('./horizon-components/code-asymptote/code-asymptote.ejs')() %>
+      <%- require('./horizon-components/code-asymptote/code-asymptote.ejs')() %>
     </section>
     <section id="technica" class="event d-flex justify-content-center">
-        <%- require('./horizon-components/technica/technica.ejs')() %>
+      <%- require('./horizon-components/technica/technica.ejs')() %>
     </section>
     <section id="speakers" class="">
-        <%- require('./horizon-components/speakers/speakers.ejs')() %>
+      <%- require('./horizon-components/speakers/speakers.ejs')() %>
     </section>
     <section id="sponsors" class="">
-        <%- require('./horizon-components/sponsors/sponsors.ejs')() %>
+      <%- require('./horizon-components/sponsors/sponsors.ejs')() %>
     </section>
-    <section id="team" class="event text-center d-flex flex-column align-items-center">
-        <%- require('./horizon-components/team/team.ejs')({ coordinators: htmlWebpackPlugin.options.coordinators }) %>
+    <section
+      id="team"
+      class="event text-center d-flex flex-column align-items-center"
+    >
+      <%- require('./horizon-components/team/team.ejs')({ coordinators:
+      htmlWebpackPlugin.options.coordinators }) %>
     </section>
-    <section id="gallery" class="" style="position:relative">
-        <%- require('./horizon-components/gallery/gallery.ejs')() %>
+    <section id="gallery" class="" style="position: relative">
+      <%- require('./horizon-components/gallery/gallery.ejs')() %>
     </section>
 
     <!-- Customerly Live Chat Snippet Code -->
     <script>
-        !function () { var e = window, i = document, t = "customerly", n = "queue", o = "load", r = "settings", u = e[t] = e[t] || []; if (u.t) { return void u.i("[customerly] SDK already initialized. Snippet included twice.") } u.t = !0; u.loaded = !1; u.o = ["event", "attribute", "update", "show", "hide", "open", "close"]; u[n] = []; u.i = function (t) { e.console && !u.debug && console.error && console.error(t) }; u.u = function (e) { return function () { var t = Array.prototype.slice.call(arguments); return t.unshift(e), u[n].push(t), u } }; u[o] = function (t) { u[r] = t || {}; if (u.loaded) { return void u.i("[customerly] SDK already loaded. Use customerly.update to change settings.") } u.loaded = !0; var e = i.createElement("script"); e.type = "text/javascript", e.async = !0, e.src = "https://messenger.customerly.io/launcher.js"; var n = i.getElementsByTagName("script")[0]; n.parentNode.insertBefore(e, n) }; u.o.forEach(function (t) { u[t] = u.u(t) }) }();
-
-        customerly.load({
-            "app_id": "5cab770d",
-            "direction": "right"
+      !(function () {
+        var e = window,
+          i = document,
+          t = "customerly",
+          n = "queue",
+          o = "load",
+          r = "settings",
+          u = (e[t] = e[t] || []);
+        if (u.t) {
+          return void u.i(
+            "[customerly] SDK already initialized. Snippet included twice."
+          );
+        }
+        u.t = !0;
+        u.loaded = !1;
+        u.o = ["event", "attribute", "update", "show", "hide", "open", "close"];
+        u[n] = [];
+        u.i = function (t) {
+          e.console && !u.debug && console.error && console.error(t);
+        };
+        u.u = function (e) {
+          return function () {
+            var t = Array.prototype.slice.call(arguments);
+            return t.unshift(e), u[n].push(t), u;
+          };
+        };
+        u[o] = function (t) {
+          u[r] = t || {};
+          if (u.loaded) {
+            return void u.i(
+              "[customerly] SDK already loaded. Use customerly.update to change settings."
+            );
+          }
+          u.loaded = !0;
+          var e = i.createElement("script");
+          (e.type = "text/javascript"),
+            (e.async = !0),
+            (e.src = "https://messenger.customerly.io/launcher.js");
+          var n = i.getElementsByTagName("script")[0];
+          n.parentNode.insertBefore(e, n);
+        };
+        u.o.forEach(function (t) {
+          u[t] = u.u(t);
         });
+      })();
 
+      customerly.load({
+        app_id: "5cab770d",
+        direction: "right",
+      });
     </script>
     <!-- End of Customerly Live Chat Snippet Code -->
-</body>
-
+  </body>
 </html>

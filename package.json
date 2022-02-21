@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "NODE_ENV=development webpack-dev-server --config webpack.dev.js --open",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --config webpack.dev.js --open",
     "build": " webpack --config webpack.prod.js",
     "run": "NODE_ENV=development webpack-dev-server --config webpack.dev.js",
     "predeploy": "npm run build",
@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "clean-webpack-plugin": "^3.0.0",
+    "cross-env": "^7.0.3",
     "css-loader": "^4.2.2",
     "ejs-easy-loader": "^0.1.4",
     "file-loader": "^6.1.0",
